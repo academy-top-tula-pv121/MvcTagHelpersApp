@@ -1,0 +1,26 @@
+﻿@using System.Collections.Generic
+
+@Html.ActionLink("To Privacy", "Privacy", "Home")
+<br />
+<a asp-route="default"
+   asp-all-route-data='new Dictionary<string, string>{{"id", "1029"}, {"title", "Idiot"}}'
+   asp-area=""   
+>
+To Item Idiot</a>
+
+@*
+   asp-controller="Home"
+   asp-action="Index"
+
+   asp-route-title="Idiot"
+   asp-route-id="1209"
+
+   asp-host="mysite.ru"
+   asp-protocol="https"
+*@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    asp-fallback-test="window.jQuery"
+    asp-fallback-src="js/jquery.js">
+</script>
+
+<script asp-src-include="~/js/**/*.js"></script>
