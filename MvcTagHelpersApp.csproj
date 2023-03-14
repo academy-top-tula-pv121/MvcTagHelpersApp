@@ -6,4 +6,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="StepClasses">
+      <HintPath>..\StepClasses\bin\Debug\net6.0\StepClasses.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

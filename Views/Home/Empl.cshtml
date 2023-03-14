@@ -1,0 +1,21 @@
+﻿@model StepClasses.Employe
+
+<h2>Add employe:</h2>
+
+<form asp-action="Empl" asp-controller="Home">
+    <p>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+    </p>
+    <p>
+        <label asp-for="Age"></label>
+        <input asp-for="Age" type="number" />
+    </p>
+    <p>
+        <label asp-for="Company"></label>
+        <select asp-for="Company" asp-items="ViewBag.Companies"></select>
+    </p>
+    <p>
+        <input type="submit" value="Create" />
+    </p>
+</form>
